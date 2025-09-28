@@ -21,7 +21,7 @@ def main():
                 pass
             elif choice == '2':
                 item = input("What number do you want to remove from the list?")
-                if (item in shopping_list & item.isDigit()) :
+                if ((item in shopping_list) & item.isnumeric()) :
                     shopping_list.remove(item)
                 else:
                     print("Try again")
