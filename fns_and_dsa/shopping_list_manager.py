@@ -13,14 +13,14 @@ def main():
         if choice.isnumeric():
             if choice == '1':
                 # Prompt for and add an item
-                item = input("What number do you want to add to the list?")
+                item = input("Enter the item to add:")
                 if item.isnumeric():
                     shopping_list.append(item)
                 else:
                     print("Input must be a number")
                 pass
             elif choice == '2':
-                item = input("What number do you want to remove from the list?")
+                item = input("Enter the item to remove:")
                 if ((item in shopping_list) & item.isnumeric()) :
                     shopping_list.remove(item)
                 else:
