@@ -3,9 +3,8 @@ from datetime import timedelta
 
 def display_current_datetime():
     current_date = datetime.now()
-    current_time_formatted= current_date.strftime("%H:%M:%S")
-    current_date_formatted=current_date.strftime("%Y-%m-%d")
-    print(f"Current date and time: {current_date_formatted} {current_time_formatted}")
+    current_date_formatted=current_date.strftime("%Y-%m-%d %H:%M:%S")
+    print(f"Current date and time: {current_date_formatted}")
 
 
 
