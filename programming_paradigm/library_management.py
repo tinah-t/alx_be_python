@@ -28,7 +28,6 @@ class Library:
                 print(f"You have checked out '{book.title}'.")
         print(f"'{title}' is not available or does not exist in the library.")
     def return_book(self, title):
-        """Return a book by title."""
         for book in self._books:
             if book.title.lower() == title.lower() and not book.is_available():
                 book.return_book()
@@ -37,7 +36,6 @@ class Library:
         print(f"'{title}' was not checked out or does not exist in the library.")
 
     def list_available_books(self):
-        """List all books that are currently available."""
         available_books = [book for book in self._books if book.is_available()]
         if not available_books:
             print("No books are currently available.")
